@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Cocos Creator | A_cat</title>
+  <title>Cocos Creator | <%=project%></title>
 
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
@@ -27,8 +27,8 @@
   <meta name="360-fullscreen" content="true"/>
   
   <!-- force screen orientation on some browser -->
-  <meta name="screen-orientation" content="portrait"/>
-  <meta name="x5-orientation" content="portrait">
+  <meta name="screen-orientation" content="<%=orientation%>"/>
+  <meta name="x5-orientation" content="<%=orientation%>">
 
   <!--fix fireball/issues/3568 -->
   <!--<meta name="browsermode" content="application">-->
@@ -37,20 +37,20 @@
   <!--<link rel="apple-touch-icon" href=".png" />-->
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
-  <link rel="stylesheet" type="text/css" href="style-mobile.6e9cd.css"/>
+  <link rel="stylesheet" type="text/css" href="style-mobile.7a673.css"/>
   <link rel="icon" href="favicon.8de18.ico"/>
 </head>
 <body>
   <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
   <div id="splash">
-    <div class="progress-bar stripes">
-      <span style="width: 0%"></span>
+    <div id="splash-inner">
+      <div id="splash-quote"></div>
     </div>
   </div>
 
-<script src="src/settings.27534.js" charset="utf-8"></script>
-
-<script src="main.c26bf.js" charset="utf-8"></script>
+<script src="src/settings.fd685.js" charset="utf-8"></script>
+<%=webDebugger%>
+<script src="main.6b730.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {

@@ -87,38 +87,36 @@ p.footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #171717 url(./splash.85cfd.png) no-repeat center;
+  background-color: #F7F2EF;
+  overflow: hidden;
+}
+
+/* 设计画布容器：固定设计分辨率 750x1334，由 JS 按屏幕比例计算尺寸与位置 */
+#splash-inner {
+  position: absolute;
+  width: 750px;
+  height: 1334px;
+  left: 0;
+  top: 0;
+  transform-origin: left top;
+  /* splash 背景图：在设计画布中居中显示 */
+  background: #F7F2EF url(./splash.e2b1f.png) no-repeat center center;
   background-size: 45%;
+  /* 初始隐藏，待 adaptSplash() 计算好 transform 后再显示，避免首帧错位闪烁 */
+  visibility: hidden;
 }
 
-.progress-bar {
+/* 名人名言 —— 与游戏主页面风格一致 */
+#splash-quote {
     position: absolute;
-    left: 27.5%;
-    top: 80%;
-    height: 3px;
-    padding: 2px;
-    width: 45%;
-    border-radius: 7px;
-    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
-}
-
-.progress-bar span {
-    display: block;
-    height: 100%;
-    border-radius: 3px;
-    transition: width .4s ease-in-out;
-    background-color: #3dc5de;
-}
-
-.stripes span {
-    background-size: 30px 30px;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
-                        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
-                        transparent 75%, transparent);            
-    
-    animation: animate-stripes 1s linear infinite;             
-}
-
-@keyframes animate-stripes {
-    0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+    /* 设计分辨率 750x1334 下，距底部约 200px，水平居中 */
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    padding: 0 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #8E5A5A;          /* 主场景规则文字颜色 r:142,g:90,b:90 */
 }
