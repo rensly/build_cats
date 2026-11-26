@@ -42,7 +42,22 @@ window.boot = function () {
         '每一个难题的背后，都藏着优雅的答案。—— 怀特海',
         '耐心和恒心总会得到报酬的。—— 爱因斯坦',
         '秩序是理解世界的第一步。—— 柏拉图',
-        '解开谜题，就是学会相信自己。—— 笛卡儿'
+        '解开谜题，就是学会相信自己。—— 笛卡儿',
+        '未经审视的人生不值得过。—— 苏格拉底',
+        '求知是人类的本性。—— 亚里士多德',
+        '如果说我看得更远，那是因为我站在巨人的肩上。—— 牛顿',
+        '简约是最终的复杂。—— 达·芬奇',
+        '知识就是力量。—— 培根',
+        '思考比知识更有价值。—— 歌德',
+        '人是一根会思考的芦苇。—— 帕斯卡',
+        '要有勇气运用你自己的理智。—— 康德',
+        '天才是百分之一的灵感加百分之九十九的汗水。—— 爱迪生',
+        '生活中没有什么可怕的东西，只有需要理解的东西。—— 居里夫人',
+        '我走得很慢，但我从不后退。—— 林肯',
+        '真正重要的东西用眼睛是看不见的。—— 圣埃克苏佩里',
+        '简洁是智慧的灵魂。—— 莎士比亚',
+        '简朴，简朴，再简朴。—— 梭罗',
+        '谁终将声震人间，必长久深自缄默。—— 尼采'
     ];
     // 启动时立即适配，并监听窗口变化
     adaptSplash();
@@ -174,7 +189,7 @@ window.boot = function () {
 if (window.jsb) {
     var isRuntime = (typeof loadRuntime === 'function');
     if (isRuntime) {
-        require('src/settings.fd685.js');
+        require('src/settings.07ad5.js');
         require('src/cocos2d-runtime.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');
@@ -182,7 +197,7 @@ if (window.jsb) {
         require('jsb-adapter/engine/index.js');
     }
     else {
-        require('src/settings.fd685.js');
+        require('src/settings.07ad5.js');
         require('src/cocos2d-jsb.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');

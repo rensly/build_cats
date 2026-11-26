@@ -1,0 +1,1 @@
+cc.sys.capabilities.touches=!0,cc.macro.ENABLE_TRANSPARENT_CANVAS=!0;
